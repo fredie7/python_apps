@@ -1,5 +1,6 @@
 from pydantic import BaseModel
 
+# Define schema
 class Diagnosis(BaseModel):
     No_Pation:float
     AGE:float
