@@ -1,0 +1,96 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app{
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+  position: relative;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 10px;
+}
+.img{
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  position: absolute;
+}
+.form-doc{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.header{
+  color: white;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.submit{
+  background-color: rgb(77, 62, 57);
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 2px solid rgb(32, 75, 32);
+}
+.diagnosis{
+  color: white;
+  font-weight: 500;
+  font-size: 25px;
+  letter-spacing: 0.25rem;
+  text-align: center;
+  animation: blinker 4s linear infinite;
+}
+@keyframes blinker{
+  from {opacity: 1.0;}
+  50%{
+    opacity: 0.3;
+  }
+  to {opacity: 1.0;}
+}
+/* @keyframes blinker{
+  50%{
+    opacity: 0;
+  }
+} */
+.form-input{
+  padding: 8px;
+  border-radius: 5px;
+}
+.submit > p{
+  color: whitesmoke;
+  text-transform: uppercase;
+  letter-spacing: 0.18rem;
+  font-weight: 700;
+}
+::placeholder{
+  color: rgb(29, 26, 26);
+}
+.redcross{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+@media only screen and (min-width:768px){
+  .form-doc{
+    width: 40%;
+  } 
+  .redcross{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+}
