@@ -1,3 +1,4 @@
+// Import dependencies
 import './App.css';
 import { useState } from 'react'
 
@@ -16,6 +17,7 @@ function App() {
   const [error, setError] = useState('')
   const [result, setResult] = useState('')
   
+  // Handle submit function
   const handleSubmit = async (e)=> {
     e.preventDefault()
     const data = {
