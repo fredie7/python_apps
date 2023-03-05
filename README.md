@@ -11,3 +11,8 @@
 
 
 #### Ultimately, a function encapsulating the predictive system is put together for ease of reference.
+
+## Authors:
+Matthew Utti
+Shavin Lillkant
+Oluwadamlare Edun
