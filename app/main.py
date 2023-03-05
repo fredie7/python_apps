@@ -1,7 +1,10 @@
+# Import dependencies
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from .app_schema import Diagnosis
 import pickle
+
 import pandas as pd
 import numpy as np
 
@@ -12,6 +15,7 @@ app = FastAPI()
 
 origins = ["*"]
 
+#Add middleware
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
@@ -20,10 +24,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Route to confirm landing page
 @app.get("/")
 def home():
     return {'message':'hello'}
 
+# Defne post route
 @app.post("/predict")
 def diabetes_diagnosis(data:Diagnosis):
     print(data)
